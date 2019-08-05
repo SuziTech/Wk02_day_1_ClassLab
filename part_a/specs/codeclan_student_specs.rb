@@ -41,9 +41,9 @@ def test_student_talk__can
 end
 
 def test_student_favourite_language
-  codeclan_student = CodeclanStudent.new('Suzanne', 'E33', 'Ruby')
-  codeclan_student.say_favourite_language()
-  assert_equal('I love Ruby', codeclan_student.favourite_language())
+  codeclan_student = CodeclanStudent.new('Suzanne', 'E33')
+  codeclan_student.say_favourite_language('Ruby')
+  assert_equal('I love Ruby', codeclan_student.say_favourite_language('Ruby'))
 end
 
 

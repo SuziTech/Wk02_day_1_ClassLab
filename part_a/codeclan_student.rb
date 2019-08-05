@@ -28,12 +28,10 @@ def student_talk()
   return 'I can talk!'
 end
 
-class CodeclanStudent
-  attr_accessor :favourite_language
-end
+
 
 def say_favourite_language(favourite_language)
-  return 'I love #{favourite_language}'
+  return 'I love ' + favourite_language
 
 end
 
